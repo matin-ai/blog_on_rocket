@@ -29,7 +29,7 @@ pub fn list_posts() -> Vec<Post> {
             posts.sort();
             posts
         },
-        // doesn't seem like selecting everything will throw any errors, leaving room for specific error handling just in case though
+        //doesn't seem like selecting everything will throw any errors, leaving room for specific error handling just in case though
         Err(err) => match err {
             _ => {
                 panic!("Database error - {}", err);
