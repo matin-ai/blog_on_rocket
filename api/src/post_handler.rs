@@ -45,3 +45,5 @@ pub fn delete_post_handler(post_id: i32) -> Result<String, NotFound<String>> {
 
     Ok(serde_json::to_string(&response).unwrap())
 }
+
+//ok
